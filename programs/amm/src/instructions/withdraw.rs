@@ -57,7 +57,6 @@ pub struct Deposit<'info> {
         associated_token::authority = user,
     )]
     pub user_lp: Account<'info, TokenAccount>,
-    // this is place where user will store its recieved LP tokens. 
     pub token_program: Program<'info, Token>,
     pub system_program: Program<'info, System>,
     pub associated_token_program: Program<'info, AssociatedToken>,

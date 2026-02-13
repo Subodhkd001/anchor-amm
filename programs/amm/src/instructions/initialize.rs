@@ -23,7 +23,9 @@ pub struct Initialize<'info> {
         mint::authority = config,
     )]
     pub mint_lp: Account<'info, Mint>,
-    // this is a process of deriving mint accounts
+    // this is the mint for LP tokens. 
+    // the token that will be issued to user when he will deposit liquidity in the pool.
+    // the authority of this mint is the config account, which means only the config account can mint new LP tokens or burn existing LP tokens.
 
     #[account(
         init,
