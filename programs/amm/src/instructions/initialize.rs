@@ -50,6 +50,7 @@ pub struct Initialize<'info> {
         space = Config::DISCRIMINATOR.len() + Config::INIT_SPACE,
     )]
     pub config: Account<'info, Config>,
+    // here we are initializing the config account
 
     pub token_program: Program<'info, Token>,
     pub associated_token_program: Program<'info, AssociatedToken>,
